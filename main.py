@@ -144,6 +144,7 @@ async def main():
     prompt = input("Enter your next prompt: ")
     res = await Runner.run(agent, prompt, session=my_session)
     print("Final Output:", res.final_output)
+    print("last agent======>", res.last_agent)
     
     
 if __name__ == "__main__":
